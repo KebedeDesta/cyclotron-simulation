@@ -1292,7 +1292,7 @@ background-color: rgb(81, 190, 235);</string>
      </property>
     </widget>
    </widget>
-   <widget class="PlotWidget" name="graphwidget" native="true">
+   <widget class="QWidget" name="graphwidget" native="true">
     <property name="geometry">
      <rect>
       <x>760</x>
@@ -2131,14 +2131,6 @@ background-color: rgb(81, 190, 235);</string>
    </property>
   </action>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>PlotWidget</class>
-   <extends>QWidget</extends>
-   <header>pyqtgraph</header>
-   <container>1</container>
-  </customwidget>
- </customwidgets>
  <tabstops>
   <tabstop>q_edit</tabstop>
   <tabstop>p_edit</tabstop>

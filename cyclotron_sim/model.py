@@ -1,6 +1,6 @@
 ﻿"""Cyclotron beam dynamics for measurement and instrumentation studies.
 
-The model follows the conventions of the existing ZykloSim project:
+The model uses the following conventions:
 
 * magnetic field along +z, dee gap parallel to the x axis
 * electric field along y inside the gap ``|y| <= d/2``

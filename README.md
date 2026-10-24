@@ -109,7 +109,7 @@ cyclotron_sim/            Core physics, instrumentation, plotting and reporting
   plots.py                Chamber geometry and diagnostic figures
   report.py               Text, CSV and Excel reports
 cyclotron_gui.py          PyQt6 desktop application
-ZykloSim_nov24.ui         Qt Designer interface reused by the GUI
+ZykloSim_nov24.ui         Qt interface definition for the desktop application
 run_cyclotron.py          Command-line entry point
 tests/                    Unit tests
 docs/images/              Figures used in this README
@@ -148,9 +148,8 @@ supports:
 - configuration load/save as JSON;
 - Excel export of the trajectory, turn data, crossings and measurement results.
 
-The interface is built from `ZykloSim_nov24.ui`; the original pyqtgraph
-placeholder is replaced at load time by an embedded Matplotlib canvas, so the
-project only requires PyQt6 and Matplotlib.
+The interface combines Qt widgets with live Matplotlib plots for the
+trajectory and diagnostic displays.
 
 ## Command line
 
@@ -230,10 +229,9 @@ real cyclotron or a dedicated beam-diagnostics test stand.
 ## Internship context
 
 This repository is the software part of a master's internship project on
-cyclotron beam dynamics and beam instrumentation. The original `ZykloSim`
-interface and reference scripts are preserved in `legacy/`; the maintained
-implementation is the `cyclotron_sim` package together with the PyQt6 and CLI
-front ends.
+cyclotron beam dynamics and beam instrumentation. Earlier reference scripts
+are preserved in `legacy/`; the maintained implementation is the
+`cyclotron_sim` package together with the PyQt6 and CLI front ends.
 
 ## Author
 

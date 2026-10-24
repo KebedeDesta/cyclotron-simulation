@@ -1,7 +1,5 @@
-
 from __future__ import annotations
 
-import io
 import json
 import os
 import sys
@@ -192,10 +190,7 @@ class MainWindow(QtWidgets.QMainWindow):
         if not UI_FILE.exists():
             raise FileNotFoundError(f"UI file not found: {UI_FILE}")
 
-        xml = UI_FILE.read_text(encoding="utf-8").replace(
-            'class="PlotWidget"', 'class="QWidget"'
-        )
-        uic.loadUi(io.StringIO(xml), self)
+        uic.loadUi(str(UI_FILE), self)
         self.setWindowTitle("ZykloSim - cyclotron measurement simulation")
 
         central = self.takeCentralWidget()
