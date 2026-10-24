@@ -1,9 +1,3 @@
-"""PyQt6 front end for the cyclotron measurement simulation.
-
-The existing ``ZykloSim_nov24.ui`` is reused.  The pyqtgraph placeholder is
-replaced by an embedded Matplotlib canvas so that the application only
-requires PyQt6 and Matplotlib.
-"""
 
 from __future__ import annotations
 
